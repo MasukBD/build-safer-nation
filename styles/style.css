@@ -81,11 +81,58 @@ header {
     margin-bottom: 14px;
 }
 
+/* feature section style here 
+------------------------------ */
+.features {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.feature-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8px;
+    row-gap: 8px;
+
+}
+
+.half-width {
+    width: 40%;
+}
+
+.feature-images img {
+    width: 100%;
+}
+
+.feature-title {
+    font-weight: 400;
+}
+
+#our {
+    font-weight: 900;
+}
+
+.orange-color {
+    font-weight: 900;
+    color: orange;
+}
+
+.feture-description {
+    margin: 15px 0;
+}
+
+/* Media quary for Mobile Devices */
+
 @media only screen and (max-width: 576px) {
     .container {
         width: 90%;
     }
 
+    /* header section mobile device media quary */
     .navbar {
         flex-direction: column;
     }
@@ -101,5 +148,21 @@ header {
 
     .banner-title {
         font-size: 2em;
+    }
+
+    /* feature section media quary */
+    .features {
+        width: 90%;
+        margin: 50px auto;
+        flex-direction: column;
+    }
+
+    .half-width {
+        width: 100%;
+    }
+
+    .feature-images {
+        grid-template-columns: repeat(1, 1fr);
+
     }
 }
