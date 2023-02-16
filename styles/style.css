@@ -216,6 +216,27 @@ header {
     justify-content: space-around;
 }
 
+/* Extra area or visit our site style  */
+.visit-site {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.visit-half-width {
+    width: 45%;
+    margin: auto;
+}
+
+.visit-half-width img {
+    width: 100%;
+}
+
+#visit-details {
+    margin: 10px 0;
+}
+
 /* footer area design  */
 footer {
     width: 90%;
@@ -307,5 +328,14 @@ footer {
 
     .sponser-image img {
         margin-top: 10px;
+    }
+
+    /* extra section / visit site  */
+    .visit-site {
+        flex-direction: column;
+    }
+
+    .visit-half-width {
+        width: 100%;
     }
 }
