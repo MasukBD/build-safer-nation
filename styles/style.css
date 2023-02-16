@@ -1,3 +1,105 @@
 * {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* common style here 
+-------------------- */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.primary-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.primary-btn {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 5px 10px;
+    background-image: linear-gradient(rgb(255, 50, 50), rgb(255, 75, 43));
+    border: none;
+    border-radius: 5px;
+
+}
+
+/* header style starts here 
+--------------------------- */
+header {
+    background-color: #fff3e8;
+}
+
+.navbar {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar>ul {
+    display: flex;
+}
+
+.navbar>ul>li {
+    list-style: none;
+    margin-right: 25px;
+}
+
+.navbar>ul>li>a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+/* banner style here 
+---------------------- */
+.banner {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner .banner-image img {
+    width: 100%;
+}
+
+.banner-description {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.banner-title {
+    font-size: 3em;
+    font-weight: 900;
+}
+
+.banner-text {
+    margin-bottom: 14px;
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar>ul {
+        margin-top: 15px;
+    }
+
+    .banner-description {
+        width: 100%;
+
+    }
+
+    .banner-title {
+        font-size: 2em;
+    }
 }
