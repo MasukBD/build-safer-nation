@@ -199,6 +199,33 @@ header {
     transform: rotate(360deg) scale(1.5);
 }
 
+/* sponser area style sheets  */
+#sponser-heading {
+    text-align: center;
+}
+
+.sponser-description {
+    width: 50%;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.sponser-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* footer area design  */
+footer {
+    width: 90%;
+    text-align: center;
+    background-color: #fff3e8;
+    border-radius: 5px;
+    margin: 50px auto;
+    padding: 10px 0;
+}
+
 /* Media quary for Mobile Devices */
 
 @media only screen and (max-width: 576px) {
@@ -267,5 +294,18 @@ header {
 
     .fact:hover {
         transform: rotate(20deg) scale(.75);
+    }
+
+    /* sponsors area media quaries  */
+    .sponser-description {
+        width: 100%;
+    }
+
+    .sponser-image {
+        flex-direction: column;
+    }
+
+    .sponser-image img {
+        margin-top: 10px;
     }
 }
