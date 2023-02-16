@@ -125,6 +125,57 @@ header {
     margin: 15px 0;
 }
 
+/* More feature and Architect section styles */
+.architect {
+    display: flex;
+    justify-content: space-around;
+}
+
+.architect-width {
+    width: 45%;
+}
+
+.architect-title {
+    font-weight: 900;
+    border-left: 5px solid orange;
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-bottom: 12px;
+}
+
+.architect-image img {
+    width: 100%;
+}
+
+.architect-description {
+    margin-bottom: 15px;
+}
+
+.architect-demo {
+    padding: 10px 20px;
+    box-shadow: 6px 5px 10px lightgray;
+    margin-top: 10px;
+}
+
+.experience-btn {
+    text-align: center;
+    position: relative;
+    left: 600px;
+    bottom: 80px;
+    padding: 15px;
+    background-color: orange;
+    font-size: 2em;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 900;
+}
+
+#experience {
+    font-size: 16px;
+    display: block;
+}
+
 /* Media quary for Mobile Devices */
 
 @media only screen and (max-width: 576px) {
@@ -164,5 +215,19 @@ header {
     .feature-images {
         grid-template-columns: repeat(1, 1fr);
 
+    }
+
+    /* More feature and Architect section style here  */
+    .architect {
+        flex-direction: column;
+    }
+
+    .architect-width {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .experience-btn {
+        left: 60px;
     }
 }
